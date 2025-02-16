@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+body{ 
+    background-color: #2d1e2f ;
+    overflow-x: hidden;
+}
+
+#topo {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+}
+
+.img {
+    width: 200px;
+}
+
+
+#menu ul {
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+#menu ul li a {
+
+    
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    margin: 40px;
+
+}
+#menu ul li a:hover {
+
+    border-bottom: #F7B32B solid 3px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    margin: 40px;
+    transition: 0.1s;
+
+}
+
+#contato button {
+    background-color:#f72c25 ;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+#contato button:hover {
+    background-color: #F7B32B ;
+    transition: 0.5s;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+
+#sessao1 {
+
+    display: flex;
+    width: 100vw;
+    
+    
+}
+
+#hero {
+    
+    padding-top: 120px;
+    width: 50%;
+    height: 500px;
+    padding-left: 100px;
+    
+}
+
+
+#hero .titulo {
+    padding-bottom: 50px;
+    color: #FCF6B1;
+    font-size: 42px;
+}
+
+span {
+    color: #F7B32B;
+}
+
+.paragrafoHero {
+    color: #FCF6B1;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.cta {
+    
+    margin-top: 60px;
+    background-color:#f72c25 ;
+    color: white;
+    width: 250px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 20px; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    
+    margin-top: 60px;
+    background-color:transparent;
+    color: #f72c25;
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    border: #f72c25 solid 3px;
+    font-weight: 500;
+    font-size: 20px; 
+    cursor: pointer;
+}
+
+
+#photoExpert {
+    width: 50%;
+    padding-right: 100px;
+    
+}
+
+#photoExpert .img { 
+    width: 500px;
+    border-radius: 50%;
+    padding-top: 50px;
+}
+
+ #sessao2 {
+
+    padding-top:100px ;
+    height: 950px;
+}
+
+ .tituloSessao {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+section #skil{ 
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skil {
+    display: flex;
+    width: 90%;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.skils1 {
+    
+    
+    margin: 20px;
+    margin-bottom: 20px;
+    padding-top: 100px;
+    margin-top: 100px;
+    width: 33%;
+    height: 100%;
+    background-color: #170f18;
+    border-radius: 20px;
+}
+
+.skils2 {
+    gap: 20px;
+    margin: 20px;
+    padding-top: 100px;
+    margin-top: 150px;
+    width: 33%;
+    height: 100%;
+    background-color: #170f18;
+    color: white;
+    border-radius: 20px;
+}
+
+
+#sessao3 {
+    width: 100vw;
+    height: 100vh;
+}
+
+#conteudoSobre {
+
+    margin-top: 60px;
+    width: 100vw;
+    display: flex;
+
+}
+
+
+#conteudoSobre .sobreImg {
+    width: 70%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img2 {
+
+    border-radius: 50%;
+    margin-left: 100px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteudoSobre .sobreTexto {
+    padding-top: 50px;
+    width: 50%;
+
+}
+
+    #conteudoSobre .paragrafoHero {
+
+    color: #FCF6B1;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 18px;
+    }
+
+
+#sessao4 {
+    margin-top: 250px;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#rodape {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color:#170f18 ;
+    border-top: #F7B32B solid 2px;
+    
+    
+}
+
+.direitos {
+
+    width: 100vw;
+    background-color: #F7B32B;
+    height: 20px;
+    color:#170f18;
+    text-align: center;
+    
+}
+
