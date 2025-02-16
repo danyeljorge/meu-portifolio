@@ -314,21 +314,60 @@ i {
 #rodape {
     
     position:relative ;
+    padding-top: 80px;
     bottom: 0;
     width: 100vw;
     height: 400px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
     background-color:#2d1e2f ;
     border-top: #F7B32B solid 2px;
     
     
 }
 
+#menuRodape {
+
+    display: flex;
+    background-color: #F7B32B;
+    width: 80%;
+    min-height: 200px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.logoRodape{
+    
+    margin: 20px;
+    width: 40%;
+}
+.logoRodape p {
+    margin-top: 20px;
+    font-size: large;
+}
+
+.linksRodape {
+    gap: 50px;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;  
+}
+
+.linksRodape a i {
+    color: #170f18;
+    
+}
+
+
+
+
 .direitos {
 
-    
+    position: absolute;
+    bottom:0;
+    right: 0;
     width: 100vw;
     background-color: #F7B32B;
     height: 40px;
@@ -341,8 +380,6 @@ i {
     
 }
 
-
-
 .bichoPreguica {
 
     position: absolute;
@@ -353,3 +390,26 @@ i {
     width: 450px;
 }
 
+
+
+.balaotips {
+
+    visibility: hidden;
+    width: 160px;
+    background-color: #c0c0c0;
+    color:#170f18;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    bottom: 70%;
+    left: 72%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.balaoPreguica:hover .balaotips {
+    visibility: visible;
+    opacity: 1;
+}
