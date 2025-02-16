@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./asset/css/style.css" />
-    <script src="./asset/javascript/scritpt.js" defer></script>
+    <script src="./asset/javascript/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <title>Dev Daniel - Meu Portifólio</title>
   </head>
   <body>
@@ -18,10 +22,16 @@
             <li><a href="#">HOME</a></li>
             <li><a href="#">SKILS</a></li>
             <li><a href="#">SOBRE</a></li>
-            <li><a href="#">PORTIFÓLIO</a></li>
+            <li><a href="#">PORTFÓLIO</a></li>
           </ul>
         </div>
-        <div id="contato"><button>CONTATO</button></div>
+        <div id="contato">
+          <button
+            onclick="window.location.href='https://api.whatsapp.com/send/?phone=5521998452350&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21&type=phone_number&app_absent=0';"
+          >
+            CONTATO
+          </button>
+        </div>
       </nav>
     </header>
     <main id="conteinerPricipal">
@@ -39,7 +49,12 @@
             Quer trocar uma ideia ou colaborar em um projeto?
           </p>
 
-          <button class="cta">Entre em Contato!</button>
+          <button
+            onclick="window.location.href='https://api.whatsapp.com/send/?phone=5521998452350&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21&type=phone_number&app_absent=0';"
+            class="cta"
+          >
+            Entre em Contato!
+          </button>
         </div>
         <div id="photoExpert">
           <img class="img" src="./asset/img/expert.png" alt="foto do Expert" />
@@ -50,19 +65,83 @@
       <h2 class="tituloSessao">Minhas <span>Soft Skils</span></h2>
       <div id="skil">
         <div class="skil">
-          <div class="skils1">1</div>
-          <div class="skils1">2</div>
-          <div class="skils1">3</div>
+          <div class="skils1">
+            <i class="bi bi-filetype-html"></i>
+            <h2>HTML</h2>
+            <div>
+              <p class="paragrafoSoftSkil">
+                Tenho domínio na estruturação de páginas web com HTML5, criando
+                código semântico, acessível e otimizado para SEO, proporcionando
+                uma base sólida para qualquer projeto web.
+              </p>
+            </div>
+          </div>
+          <div class="skils1">
+            <i class="bi bi-filetype-css"></i>
+            <h2>CSS</h2>
+            <div>
+              <p class="paragrafoSoftSkil">
+                Utilizo CSS3 para transformar layouts em interfaces modernas e
+                responsivas, aplicando animações, flexbox e grid para garantir
+                beleza e funcionalidade
+              </p>
+            </div>
+          </div>
+          <div class="skils1">
+            <i class="bi bi-phone-flip"></i>
+            <h2>RESPONSIVIDADE</h2>
+
+            <div>
+              <p class="paragrafoSoftSkil">
+                Desenvolvo sites que se adaptam perfeitamente a diferentes
+                tamanhos de tela, proporcionando uma experiência consistente e
+                amigável tanto para dispositivos móveis quanto para desktops.
+              </p>
+            </div>
+          </div>
         </div>
         <div class="skil">
-          <div class="skils2">4</div>
-          <div class="skils2">5</div>
-          <div class="skils2">6</div>
+          <div class="skils2">
+            <i class="bi bi-filetype-js"></i>
+            <h2>JAVASCRIPT</h2>
+
+            <div>
+              <p class="paragrafoSoftSkil">
+                Programo interações dinâmicas e intuitivas com JavaScript,
+                criando desde efeitos visuais até funcionalidades completas para
+                aplicações web.
+              </p>
+            </div>
+          </div>
+          <div class="skils2">
+            <i class="bi bi-wordpress"></i>
+            <h2>WORDPRESS</h2>
+
+            <div>
+              <p class="paragrafoSoftSkil">
+                Tenho experiência na criação e personalização de sites com
+                WordPress, utilizando temas, plugins e Elementor Pro para
+                entregar soluções profissionais e otimizadas.
+              </p>
+            </div>
+          </div>
+          <div class="skils2">
+            <i class="bi bi-github"></i>
+            <h2>GIT & GITHUB</h2>
+
+            <div>
+              <p class="paragrafoSoftSkil">
+                Versiono meus projetos com Git, garantindo colaboração eficiente
+                e segurança no código, com repositórios organizados e deploy
+                facilitado através do GitHub.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section id="sessao3">
-      <h2 class="tituloSessao">Sobre<span>Mim</span></h2>
+      <h2 class="tituloSessao">Sobre <span>Mim</span></h2>
 
       <div id="conteudoSobre">
         <div class="sobreImg">
@@ -85,13 +164,18 @@
             crescer como desenvolvedor, com foco em entregar projetos de alta
             qualidade que façam a diferença no mundo digital.
           </p>
-          <button class="cta">Fale Comigo!</button>
+          <button
+            onclick="window.location.href='https://api.whatsapp.com/send/?phone=5521998452350&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21&type=phone_number&app_absent=0';"
+            class="cta"
+          >
+            Fale Comigo!
+          </button>
         </div>
       </div>
     </section>
 
     <section id="sessao4">
-      <h2 class="tituloSessao">Meu<span>Portifólio</span></h2>
+      <h2 class="tituloSessao">Meu <span>Portfólio</span></h2>
     </section>
 
     <footer id="rodape">
@@ -99,6 +183,11 @@
       <div class="direitos">
         &copy; TODOS OS DIREITOS RESERVADOS. DEV.DANEIL
       </div>
+      <img
+        src="./asset/img/bicho_preguica_mascote.png"
+        class="bichoPreguica"
+        alt="Bicho_preguiça_mascote"
+      />
     </footer>
   </body>
 </html>
