@@ -11,6 +11,14 @@ body{
     overflow-x: hidden;
 }
 
+.efeitoHeroTopo, .efeitoExpertTopo, 
+.efeitoSkil1, .efeitoSkil2, .efeitoSkil3,
+ .efeitoSkil4, .efeitoSkil5, .efeitoSkil6,
+ .efeitoSobreImg, .efeitoSobreText {
+    visibility: hidden;
+
+}
+
 #topo {
     display: flex;
     justify-content: space-between;
