@@ -169,6 +169,7 @@ span {
 
  #sessao2 {
 
+    width: 100vw;
     padding-top:150px ;
     height: 950px;
 }
@@ -180,7 +181,7 @@ span {
 }
 
 section #skil{ 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin-top: 50px;
     display: flex;
@@ -191,7 +192,7 @@ section #skil{
 
 .skil {
     display: flex;
-    width: 90%;
+        width: 90%;
     height: 600px;
     align-items: center;
     justify-content: center;
@@ -219,6 +220,7 @@ section #skil{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .skils2 h2 {
@@ -232,7 +234,6 @@ section #skil{
 
     gap: 20px;
     margin: 20px;
-    ;
     margin-top: 150px;
     width: 33%;
     height: 100%;
@@ -245,6 +246,7 @@ section #skil{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 i { 
