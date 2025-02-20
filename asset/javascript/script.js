@@ -90,3 +90,24 @@ ScrollTrigger.create({
     document.querySelector("#link-Cima").style.opacity = 0; // faz o botao desaparecer quando rolar para cima
   },
 });
+
+// COLOCANDO O SPLIT TEXT NA SESSAO EXTRA
+
+let textoAnimado = document.querySelectorAll(".textoAnimado");
+
+textoAnimado.forEach((char) => {
+  let texto = new SplitType(char, { types: "chars" });
+
+  gsap.from(texto.chars, {
+    scrollTrigger: {
+      trigger: char,
+      start: "top 90%",
+      end: "top center",
+      scrub: 1,
+      markers: false,
+    },
+    y: -40,
+    opacity: 0,
+    stagger: 0.1,
+  });
+});
