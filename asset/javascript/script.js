@@ -1,10 +1,12 @@
-window.revelar = ScrollReveal({ reset: true });
+gsap.registerPlugin(ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger);
+window.revelar = ScrollReveal({ reset: false });
 
 // TOPO DO SITE
 
 revelar.reveal(".efeitoHeroTopo", {
   duration: 2000,
-  distance: "90px",
+  distance: "0px",
 });
 
 revelar.reveal(".efeitoExpertTopo", {
@@ -59,4 +61,32 @@ revelar.reveal(".efeitoSobreText", {
   distance: "90px",
   delay: 500,
   origin: "right",
+});
+
+// inseriodo o condigo do GSAP ScrollTo
+
+document.querySelectorAll("a[id^=link-]").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    let rolarPara = link.id.replace("link-", "sessao-");
+    gsap.to(window, {
+      duration: 2,
+      scrollTo: `#${rolarPara}`,
+      ease: "power2.out",
+    });
+  });
+});
+
+ScrollTrigger.create({
+  trigger: "#link-Cima", // o elemento que sera monitorado
+  start: "bottom top", //quando a pagina rolar 300px
+  markers: false,
+  onEnter: () => {
+    document.querySelector("#link-Cima").style.opacity = 1; // faz o botao aparecer
+
+    document.querySelector("#link-Cima").style.transition = "opacity 0.3s ease"; // transição suave
+  },
+  onLeaveBack: () => {
+    document.querySelector("#link-Cima").style.opacity = 0; // faz o botao desaparecer quando rolar para cima
+  },
 });
