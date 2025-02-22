@@ -15,7 +15,9 @@ body{
 .efeitoHeroTopo, .efeitoExpertTopo, 
 .efeitoSkil1, .efeitoSkil2, .efeitoSkil3,
  .efeitoSkil4, .efeitoSkil5, .efeitoSkil6,
- .efeitoSobreImg, .efeitoSobreText {
+ .efeitoSobreImg, .efeitoSobreText, .efeitoBoxCard, 
+ .efeitoBoxCard2, .efeitoBoxCard3, .efeitoBoxContato,
+ .efeitoInputNome, .efeitoMenssagem, .efeitoBotaoZap  {
     visibility: hidden;
 
 }
@@ -294,6 +296,9 @@ i {
 
     width: 100%;
     height: 100vh;
+    background-image: url(../img/bg-hero-compressed2.jpg);
+    background-position: top center ;
+    background-size: cover;
 }
 
 #conteudoSobre {
@@ -324,6 +329,7 @@ i {
 #conteudoSobre .sobreTexto {
     padding-top: 50px;
     width: 40%;
+    
 
 }
 
@@ -337,26 +343,233 @@ i {
 
 
 #sessao-portfolio {
-    margin-top: 250px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    
+    }
+
+
+#boxportfolio {
+    
+    margin-top: 100px;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+    
+}
+
+.boxCard { 
+    background-color:#2d1e2f;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    background-size: cover;
+}
+
+.boxCard:hover { 
+    background-color:#2d1e2f;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    background-size: cover;
+    transform: scale(1.02);
+    transition: 0.5s;
+    box-shadow:3px 1px 9px 1px rgba(69,1,69,0.62); } 
+
+.boxTexto {
+    background-color:#F7B32B;
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 0 0 1rem 1rem;
+    color: #2d1e2f;
+    padding-bottom: 1.4rem;
+}
+
+.boxTexto h3 {
+    font-size: 1rem;
+    padding-bottom: 0.9rem;
+    
+    
+}
+
+.boxTexto p {
+
+    font-size: 0.9rem;
+    padding-bottom: 0.4rem;
+    width: 300px;
+}
+
+.boxTexto a {
+
+    font-weight: 600;
+    background-color: #2d1e2f;
+    color: white;
+    border-radius: 0.5rem;  
+    padding: 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding-bottom: 0.4rem;
+    margin-left: 12rem;
+}
+
+.boxTexto a:hover {
+
+    font-weight: 600;
+    background-color:#f72c25;
+    color: white;
+    border-radius: 0.5rem;  
+    padding: 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding-bottom: 0.4rem;
+    margin-left: 12rem;
 }
 
 
-#rodape {
+
+.boxImg1 { 
+    background-image: url(../img/ursulaadv.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem 1rem 0 0;
+
+}
+
+.boxImg2 { 
+    background-image: url(../img/pagina\ de\ login\ interativo.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem 1rem 0 0;
+
+}
+.boxImg3 { 
+    background-image: url(../img/calcscript.jpeg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem 1rem 0 0;
+
+}
+
+.imgBox {
+    width: 300px;
+    height: auto;
+    background-size: cover;
+}
+
+#sessao-contato {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg-hero-compressed2.jpg);
+    background-position: top center ;
+    background-size: cover;
+}
+
+.contato {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    height: 400px;
+    background-color: #2d1e2f5d;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.input {
+    background-color: #170f18;
+    border: none;
+    gap: 20px;
+    padding: 1rem;
+    margin: 0.8rem;
+    width: 500px;
+    border-radius: 20px;
+    color: white;
+    font-size: large;
+    outline: none;
+}
+
+.input:hover {
+
+    border:#62026e solid 1px;
+    box-shadow: 3px 1px 9px 1px rgba(69,1,69,0.62) ;
+}
+
+
+
+
+
+.enviarZap {
+    background-color:#F7B32B ;
+    color:#170f18;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 2rem;
+}
+
+.enviarZap:hover {
+    background-color:#ffaa00 ;
+    color:#170f18;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: large;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+
+
+
+.footer {
     
     position:relative ;
     padding-top: 80px;
-    bottom: 0;
-    width: 100vw;
+    bottom: -0px;
+    left: 0;
+    width: 100%;
     height: 400px;
     display: flex;
     flex-direction: column;
     background-color:#2d1e2f ;
     border-top: #F7B32B solid 2px;
-    
-    
+       
 }
+
+
 
 #menuRodape {
 

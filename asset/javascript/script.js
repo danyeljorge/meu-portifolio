@@ -63,6 +63,46 @@ revelar.reveal(".efeitoSobreText", {
   origin: "right",
 });
 
+revelar.reveal(".efeitoBoxCard", {
+  duration: 2000,
+  distance: "90px",
+});
+
+revelar.reveal(".efeitoBoxCard2", {
+  duration: 2000,
+  distance: "90px",
+  delay: 500,
+});
+
+revelar.reveal(".efeitoBoxCard3", {
+  duration: 2000,
+  distance: "90px",
+  delay: 1000,
+});
+
+revelar.reveal(".efeitoBoxContato", {
+  duration: 2000,
+  distance: "90px",
+});
+
+revelar.reveal(".efeitoInputNome", {
+  duration: 2000,
+  distance: "90px",
+  delay: 500,
+});
+
+revelar.reveal(".efeitoMenssagem", {
+  duration: 2000,
+  distance: "90px",
+  delay: 1000,
+});
+
+revelar.reveal(".efeitoBotaoZap", {
+  duration: 2000,
+  distance: "90px",
+  delay: 1500,
+});
+
 // inseriodo o condigo do GSAP ScrollTo
 
 document.querySelectorAll("a[id^=link-]").forEach((link) => {
@@ -132,3 +172,22 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+//INSERINDO FORMULARIO PARA ENVIAR PARA WHATSAPP
+
+function enviarMenssagem(event) {
+  event.preventDefault();
+
+  const nome = document.getElementById("nome").value;
+  const mensagem = document.getElementById("menssagem").value;
+  const telefone = "5521998452350";
+  const texto = `Olá, meu nome é ${nome}, ${mensagem}`;
+
+  const formatarMenssagem = encodeURIComponent(texto);
+
+  const url = `https://wa.me/${telefone}?text=${formatarMenssagem}`;
+
+  console.log(url);
+
+  window.open(url, "_blank");
+}

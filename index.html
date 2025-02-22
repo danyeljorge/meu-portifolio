@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./asset/css/style.css" />
     <script src="./asset/javascript/script.js" defer></script>
+    <script src="./asset/javascript/footer.js" defer></script>
     <script src="./asset/javascript/gsap.js" defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -43,9 +44,7 @@
           </ul>
         </div>
         <div id="contato">
-          <button
-            onclick="window.open('https://api.whatsapp.com/send/?phone=5521998452350&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21&type=phone_number&app_absent=0', '_blank');"
-          >
+          <button onclick="location.href='#sessao-contato'" id="link-contato">
             CONTATO
           </button>
         </div>
@@ -81,7 +80,7 @@
     <section id="sessao1Extra">
       <h1 class="textoAnimado">
         Codificar é a arte de transformar <br />
-        ideias em soluções, <br />
+        <span>ideias em soluções, </span> <br />
         uma linha de código de cada vez.
       </h1>
     </section>
@@ -190,7 +189,8 @@
             qualidade que façam a diferença no mundo digital.
           </p>
           <button
-            onclick="window.open('https://api.whatsapp.com/send/?phone=5521998452350&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21&type=phone_number&app_absent=0', '_blank');"
+            onclick="location.href='#sessao-contato'"
+            id="link-contato"
             class="cta"
           >
             Fale Comigo!
@@ -201,9 +201,103 @@
 
     <section id="sessao-portfolio">
       <h2 class="tituloSessao">Meu <span>Portfólio</span></h2>
+
+      <div id="boxportfolio">
+        <div class="boxCard efeitoBoxCard">
+          <div class="boxImg1"></div>
+          <div class="boxTexto">
+            <h3>Ursula Couto Advocacia</h3>
+            <p>
+              Desenvolvi o site institucional da Ursula Couto Advocacia
+              utilizando WordPress e Elementor Pro. O site apresenta um design
+              profissional e responsivo, destacando os serviços jurídicos do
+              escritório com uma identidade visual elegante e moderna.
+            </p>
+            <a
+              href="https://ursulacoutoadvocacia.com.br/"
+              target="_blank"
+              class="siteProjeto"
+              >Ver Projeto</a
+            >
+          </div>
+        </div>
+
+        <div class="boxCard efeitoBoxCard2">
+          <div class="boxImg2"></div>
+          <div class="boxTexto">
+            <h3>Página de Login Interativo com Flip</h3>
+            <p>
+              Uma página de login interativa com um design moderno e estilizado.
+              A interface apresenta um layout moderno, uma seção de login e um
+              efeito de "flip" para exibir mais informações ou opções
+              adicionais, como cadastro de novos usuários.
+            </p>
+            <a
+              href="https://danyeljorge.github.io/login-cadastro-dinamico/"
+              target="_blank"
+              class="siteProjeto"
+              >Ver Projeto</a
+            >
+          </div>
+        </div>
+
+        <div class="boxCard efeitoBoxCard3">
+          <div class="boxImg3"></div>
+          <div class="boxTexto">
+            <h3>Calculadora CalcScript</h3>
+            <p>
+              O projeto CalcScript é uma calculadora funcional que suporta
+              operações matemáticas básicas, como soma, subtração, multiplicação
+              e divisão. A calculadora possui uma interface amigável, botões
+              interativos e exibe os cálculos em tempo real.
+            </p>
+            <a
+              href="https://danyeljorge.github.io/calcscript/"
+              target="_blank"
+              class="siteProjeto"
+              >Ver Projeto</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer id="rodape">
+    <section id="sessao-contato">
+      <h2 class="tituloSessao">Meu <span>Contato</span></h2>
+      <div class="contato">
+        <div class="formulario efeitoBoxContato">
+          <form
+            class="formulario_contato"
+            onsubmit="enviarMenssagem(event)"
+            id="form"
+          >
+            <div class="inputform">
+              <input
+                type="text"
+                name="nome"
+                class="input efeitoInputNome"
+                id="nome"
+                placeholder="Nome"
+              />
+            </div>
+            <div class="inputform efeitoMenssagem">
+              <textarea
+                name="menssagem"
+                id="menssagem"
+                class="input"
+                rows="6"
+                placeholder="Digite sua mensagem"
+              ></textarea>
+            </div>
+            <button type="submit" class="enviarZap efeitoBotaoZap">
+              Enviar para whatsapp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="rodape" class="footer">
       <div id="menuRodape">
         <div class="logoRodape">
           <img src="./asset/img/LOGO.png" alt="" />
