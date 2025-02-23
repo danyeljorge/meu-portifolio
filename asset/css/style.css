@@ -30,6 +30,7 @@ body{
     padding: 60px 40px;
     z-index: 10;
     
+    
 }
 
 .img {
@@ -63,33 +64,48 @@ body{
     transition: 0.1s;
 
 }
+#contato {
+    
+    padding: 20px 0px;
+    height: 250px;
+    overflow: hidden;
+    
+}
 
-#contato button {
+
+
+.botaoEfeito {
+    
+    width: 70px;
+    height: 30px;
+    text-decoration: none;
     background-color:#f72c25 ;
     color: white;
-    width: 150px;
-    height: 50px;
+    padding: 1.2rem 3rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
+    transition: .5s;
 
 }
 
-#contato button:hover {
-    background-color: #F7B32B ;
-    transition: 0.5s;
-    color: white;
-    width: 150px;
-    height: 50px;
-    border: none;
-    border-radius: 20px;
+.botaoEfeito:hover {
+    
+    width: 70px;
+    height: 30px;
+    text-decoration: none;
+    background-color:#F7B32B;
+    color: black;
+    border-radius: 50px;
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
-
 }
+
+
+
 
 #conteinerPricipal {
     display: flex;
@@ -160,20 +176,21 @@ span {
     width: 90%;
     line-height: 1.6;
     font-size: 17px;
+    margin-bottom: 40px;
 }
 
 .cta {
     
+    width: 250px;
+    height: 60px;
     margin-top: 60px;
     background-color:#f72c25 ;
     color: white;
-    width: 250px;
-    height: 60px;
     border: none;
+    text-decoration: none;
     border-radius: 20px;
     font-weight: 500;
     font-size: 20px; 
-    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -190,6 +207,37 @@ span {
     font-size: 20px; 
     cursor: pointer;
 }
+
+.cta2 {
+    
+    width: 250px;
+    height: 60px;
+    margin-top: 20px;
+    background-color:#f72c25 ;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 20px; 
+    transition: 0.3s;
+    padding: 10px 25px;
+}
+
+.cta2:hover {
+    
+    margin-top: 60px;
+    background-color:transparent;
+    color: #f72c25;
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    border: #f72c25 solid 3px;
+    font-weight: 500;
+    font-size: 20px; 
+    cursor: pointer;
+}
+
+
 
 
 #photoExpert {
