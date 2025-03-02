@@ -730,97 +730,88 @@ i {
 
 /* DEIXAR O SITE RESPONSIVO */
 
+
+
+
+
+
+
+/* Para telas muito pequenas (como smartphones) */
 @media (max-width: 768px) {
     #topo {
-        padding: 20px 10px;
+        
+        padding: 30px 10px;
+        display: flex;  
+        justify-content: space-between;
+    
     }
+
+    .img {
+        width: 12rem;
+    }
+
     #menu ul {
         display: none;
     }
-   
-    }
-    #sessao-home {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 200px;
-        padding-top: 100px;
-        
+
+  
+
+    .botaoContato {
+        width: 100%;
+        font-size: 0.6rem;
     }
 
-    #photoExpert {
-        
-        width: 100%;
-        padding: 0 20px;
-        display: flex;
-        align-items: center;
+    #sessao-home {
+        margin-top: 150px;
+        padding-top: 8rem;
+        flex-direction: column-reverse;
         justify-content: center;
     }
 
-#img {
-
-    width: auto;
-    height: auto;
-    padding-top: 20px;
-}    
     #hero {
         width: 100%;
-        padding: 0 20px;
+        padding-left: 5%;
+        padding-top: 5rem;
     }
-   
-    #sessao1Extra {
-        
-        padding-left: 20px ;
-        padding-right: 20px;
+
+    #photoExpert .img {
+        width: 18rem;
     }
-    #sessao1Extra h1 {
-        font-size: 2rem;
-    }
+
     #sessao-skils {
-        padding-top: 100px;
+        margin-top: 30px;
+        padding-bottom: 30px;
     }
+
     .skils1, .skils2 {
-        flex: 1 1 calc(100% - 20px);
+        flex: 1 1 100%;
         max-width: 100%;
     }
-    #conteudoSobre {
-        flex-direction: column;
-    }
-    #conteudoSobre .sobreImg {
-        width: 100%;
-        padding: 0 20px;
-    }
-    #conteudoSobre .sobreTexto {
-        width: 100%;
-        padding: 0 20px;
-    }
-    #sessao-portfolio {
-        padding-top: 100px;
-    }
+
     #boxportfolio {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
+
     .boxCard {
-        padding: 20px;
+        width: 100%;
     }
-    #sessao-contato {
-        padding-top: 100px;
-    }
+
     .formulario {
         width: 100%;
+        height: auto;
     }
+
     .input {
         width: 100%;
     }
-    #menuRodape {
+
+    .enviarZap {
         width: 100%;
-        margin-left: 0;
     }
-    .logoRodape {
-        width: 100%;
-        text-align: center;
+
+    .footer {
+        padding-top: 30px;
+        height: auto;
     }
-    .linksRodape {
-        padding-left: 0;
-        justify-content: center;
-    }
-    
+}
