@@ -60,7 +60,7 @@ body{
     font-weight: 500;
     color: white;
     text-decoration: none;
-    margin: 43rem;
+    margin: 3rem;
     transition: 0.1s;
 
 }
@@ -253,6 +253,10 @@ span {
     animation: floatAnimation 4s ease-in-out infinite;
 }
 
+
+/* ANIMAÇÃO DA FOTO DO EXPERT */
+
+
 @keyframes floatAnimation {
     0% {
         transform: translateY(0);
@@ -411,8 +415,7 @@ i {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
-    
-    
+
 }
 
 .boxCard { 
@@ -711,7 +714,7 @@ i {
  
     z-index: 99;
     position: fixed;
-    bottom: 200px;
+    bottom: 100px;
     right: -75px;
     background-color: transparent;
     color: white;
@@ -728,13 +731,6 @@ i {
     color:#F7B32B ;
 }
 
-/* DEIXAR O SITE RESPONSIVO */
-
-
-
-
-
-
 
 /* Para telas muito pequenas (como smartphones) */
 @media (max-width: 768px) {
@@ -747,6 +743,7 @@ i {
     }
 
     .img {
+        padding-left: 20px;
         width: 12rem;
     }
 
@@ -754,14 +751,12 @@ i {
         display: none;
     }
 
-  
-
     .botaoContato {
         display: none;
     }
 
     #sessao-home {
-        margin-top: 150px;
+        margin-top: 170px;
         padding-top: 8rem;
         flex-direction: column-reverse;
         justify-content: center;
@@ -774,12 +769,23 @@ i {
         padding-top: 5rem;
     }
 
+    #photoExpert { 
+        width: 100%;
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
     #photoExpert .img {
-        width: 18rem;
+        width: 26rem;
+        
     }
 
     #sessao1Extra {
-        padding-top: 30rem;
+        padding-top: 35rem;
     }
 
     #sessao1Extra h1 {
@@ -787,7 +793,7 @@ i {
     }
 
     #sessao-skils {
-        margin-top: 100px;
+        margin-top: 130px;
         padding-bottom: 30px;
     }
 
@@ -796,7 +802,40 @@ i {
         max-width: 100%;
     }
 
+    section #sessao-sobre {
+        width: 100%;
+        height: 100vh;
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: #f72c25;
+    }
+
+    #conteudoSobre .img2 {
+        width:100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        background-color: #f72c25;
+    }
+
+    div .sobreTexto{
+        width: 100%; 
+        background-color: #F7B32B;
+        
+    }
+    p .paragrafoHero {
+        width: 100%;
+        font-size: 2rem;
+        background-color: #F7B32B;
+    }
+
     #boxportfolio {
+        height: 100vh;
+        
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }

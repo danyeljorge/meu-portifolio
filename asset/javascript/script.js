@@ -117,7 +117,7 @@ document.querySelectorAll("a[id^=link-]").forEach((link) => {
   });
 });
 
-ScrollTrigger.create({
+/*ScrollTrigger.create({
   trigger: "#link-Cima", // o elemento que sera monitorado
   start: "bottom top", //quando a pagina rolar 300px
   markers: false,
@@ -129,7 +129,7 @@ ScrollTrigger.create({
   onLeaveBack: () => {
     document.querySelector("#link-Cima").style.opacity = 0; // faz o botao desaparecer quando rolar para cima
   },
-});
+}); */
 
 // COLOCANDO O SPLIT TEXT NA SESSAO EXTRA
 
