@@ -242,6 +242,7 @@ span {
 
 #photoExpert {
     width: 50%;
+    height:100vh ;
     padding-right: 100px;
     
 }
@@ -747,6 +748,7 @@ i {
         padding: 30px 10px;
         display: flex;  
         justify-content: space-between;
+        background-color: transparent;
     
     }
 
@@ -764,7 +766,7 @@ i {
     }
 
     #sessao-home {
-        margin-top: 170px;
+        margin-top: 200px;
         padding-top: 8rem;
         flex-direction: column-reverse;
         justify-content: center;
@@ -779,17 +781,23 @@ i {
 
     #photoExpert { 
         width: 100%;
+        height: 100%;
         padding-right: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        margin-bottom: -50px;
     }
 
 
     #photoExpert .img {
         width: 26rem;
         
+    }
+
+    .spline{
+        width: 50%;
     }
 
     #sessao1Extra {
