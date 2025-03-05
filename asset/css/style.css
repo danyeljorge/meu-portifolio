@@ -771,7 +771,11 @@ i {
 
     #sessao-home {
         width: 100%;
+<<<<<<< HEAD
         margin-top: 90px;
+=======
+        margin-top: 170px;
+>>>>>>> 80c7aee044704db7ae66b155f3538c6db1e7dbf1
         padding-top: 8rem;
         flex-direction: column-reverse;
         justify-content: center;
@@ -781,7 +785,11 @@ i {
     #hero {
         width: 90%;
         
+<<<<<<< HEAD
         padding-top: 0;
+=======
+        padding-top: 5rem;
+>>>>>>> 80c7aee044704db7ae66b155f3538c6db1e7dbf1
     }
 
     #photoExpert { 
