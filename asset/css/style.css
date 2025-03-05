@@ -357,6 +357,7 @@ i {
 
     
     width: 100%;
+    height: 100vh;
     display: flex;
 
 }
@@ -397,7 +398,7 @@ i {
 #sessao-portfolio {
     margin-top: 150px;
     margin-bottom: 150px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -428,6 +429,7 @@ i {
     border-radius: 1.5rem;
     padding: 1rem;
     background-size: cover;
+    width: 350px;
 }
 
 .boxCard:hover { 
@@ -458,8 +460,8 @@ i {
 .boxTexto p {
 
     font-size: 0.9rem;
-    padding-bottom: 0.4rem;
-    width: 300px;
+    padding-bottom: 0.7rem;
+    width: 100%;
 }
 
 .boxTexto a {
@@ -472,7 +474,8 @@ i {
     text-decoration: none;
     font-size: 0.9rem;
     padding-bottom: 0.4rem;
-    margin-left: 12rem;
+    margin-left: 10rem;
+    
 }
 
 .boxTexto a:hover {
@@ -669,7 +672,7 @@ i {
     position: absolute;
     bottom:0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     background-color: #F7B32B;
     height: 40px;
     color:#2d1e2f;
@@ -720,7 +723,7 @@ i {
     z-index: 99;
     position: fixed;
     bottom: 100px;
-    right: -75px;
+    right: -50px;
     background-color: transparent;
     color: white;
     border: none;
@@ -812,37 +815,50 @@ i {
         position: relative;
         width: 100%;
         height: 100vh;
-        padding-top: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin-top: 150px;
         
-        background-color: #f72c25;
+          
     }
 
     #conteudoSobre {
+        
+        position: absolute;
         width: 100%;
-        height: 100vh;
+        height: auto;
         display:flex ;
+        flex-wrap: wrap;
         flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+       
     }
 
     .img2 {
-        width:100%;
+        padding-top: 30px;
+        width:380px;
         height: auto;
         align-items: center;
         justify-content: center;
-        background-color: #f72c25;
+        margin-left: 0;
+        
     }
 
-    .sobreTexto{
+    #conteudoSobre .sobreTexto {
         width: 100%; 
-        
-        
+        height: auto;
+        padding-top: 50px;
+
+    
+         
+    }
+
+    .paragrafoHero{
+        width: 100%;
     }
 
     #sessao-portfolio {
+        margin-top: 450px;
         width: 100%;
         height: auto;
     }
@@ -863,6 +879,8 @@ i {
 
     #sessao-contato {
         width: 100%;
+        height: auto;
+        padding-bottom: 100px;
     }
 
     .formulario {
