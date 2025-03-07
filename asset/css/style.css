@@ -184,7 +184,7 @@ span {
     
     width: 15rem;
     height: 4rem;
-    margin-top: 4rem;
+    
     background-color:#f72c25 ;
     color: white;
     border: none;
@@ -197,7 +197,7 @@ span {
 
 .cta:hover {
     
-    margin-top: 4rem;
+    margin-top: 0.2rem;
     background-color:transparent;
     color: #f72c25;
     width: 15rem;
