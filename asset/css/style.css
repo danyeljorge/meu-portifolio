@@ -74,6 +74,7 @@ body{
 
 
 
+
 .botaoContato {
     
     width: 4.37rem;
@@ -808,6 +809,9 @@ i {
         visibility: visible;
     }
 
+ .spline {
+        display: none !important;
+    }
     #sessao1Extra {
         padding-top: 35rem;
     }
